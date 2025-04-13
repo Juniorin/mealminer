@@ -4,6 +4,9 @@
 body {
     font-family: 'Press Start 2P';
     background-color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 /* Main Content */
@@ -17,49 +20,53 @@ body {
 .content-wrapper {
     display: flex;
     align-items: center;
-    max-width: 3000px;
+    max-width: 2000px;
     flex-wrap: wrap;
-    text-align: left;
 }
 
 /* Left Logo */
 .mealminer-logo {
     width: 400px;
     height: 400px;
-    margin-right: -1rem;
 }
 
 /* Text */
 .text-content {
-    max-width: 300px;
+    display: inline-block;
+    width: fit-content;
 }
 
 /* Title and subtitle */
 .title-section h1 {
-    font-size: 100px;
+    font-size: 60px;
     color: #1E1E1E;
     margin-bottom: 0;
 }
 
 .motto {
     font-family: 'Anonymous Pro';
-    font-size: 0.7rem;
-    line-height: 1.6;
+    font-size: 28px;
+    font-weight: 400;
+    width: 615px;
+    word-wrap: break-word;
     margin-bottom: 2rem;
-    color: #222;
+    color: black;
 }
 
 /* Buttons */
 .button-container {
     display: flex;
+    flex-grow: 2;
     gap: 1.5rem;
+    justify-content: left;
 }
 
 .signup-container,
 .login-container {
     display: flex;
+    flex-grow: 1;
+    align-items: left;
     flex-direction: column;
-    align-items: center;
 }
 
 .nav-signup-button,
@@ -67,8 +74,8 @@ body {
     background-color: #FEE59F;
     border: none;
     font-family: 'Press Start 2P', cursive;
-    font-size: 0.75rem;
-    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     transition: transform 0.15s ease-in-out;
     border-radius: 8px;
