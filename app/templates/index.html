@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MealMiner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header></header>
+    <div class="main-content">
+        <div class="content-wrapper">
+
+            <img src="{{ url_for('static', filename='images/index_images/logo.png') }}" alt="MealMiner Logo" class="mealminer-logo">
+            
+            <div class="text-content">
+                <div class="title-section">
+                    <h1>mealminer</h1>
+                    <p class="motto">Have your chest of favorite recipes nearby and organized no matter where your adventures may take you.</p>
+                </div>
+                
+                <div class="button-container">
+                    <div class="signup-container">
+                        <button type="button" class="nav-signup-button">Make Chest</button>
+                        <p class="signup-text">Sign Up</p>
+                    </div>
+                    <div class="login-container">
+                        <button type="button" class="nav-login-button">Open Chest</button>
+                        <p class="login-text">Log In</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
