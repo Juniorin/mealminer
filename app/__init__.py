@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from .config import Config
+from app.routes import register_routes
 
 # Initiliaze extensions globally 
 db = SQLAlchemy()
@@ -14,8 +15,7 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from app.routes import main_bp
-    app.register_blueprint(main_bp)
+    register_routes(app)
 
 
     from app import models
