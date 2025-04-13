@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
     background-color: #fff;
 }
 
@@ -17,27 +17,28 @@ body {
 .content-wrapper {
     display: flex;
     align-items: center;
-    max-width: 2000px;
+    max-width: 3000px;
     flex-wrap: wrap;
     text-align: left;
 }
 
 /* Left Logo */
 .mealminer-logo {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin-right: -1rem;
 }
 
 /* Text */
 .text-content {
-    max-width: 420px;
+    max-width: 300px;
 }
 
 /* Title and subtitle */
 .title-section h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 100px;
+    color: #1E1E1E;
+    margin-bottom: 0;
 }
 
 .motto {
