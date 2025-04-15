@@ -144,6 +144,7 @@ body {
 .signup-text,
 .login-text {
     font-family: 'Anonymous Pro';
+    text-align: center;
     font-size: 1.5rem;
     margin-top: 0.4rem;
     color: #444;
