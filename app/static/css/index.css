@@ -4,8 +4,62 @@
 body {
     font-family: 'Press Start 2P';
     background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+.mealminer-logo-header {
+    width: 3rem;
+    height: 3rem;
+    color: #1E1E1E;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Anonymous Pro';
+    color: #1E1E1E;
+    font-size: 2rem;
+}
+
+.header-buttons {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+.header-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.65rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #FEE59F;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 /* Main Content */
 .main-content {
     display: flex;
@@ -16,42 +70,42 @@ body {
 
 .content-wrapper {
     display: flex;
-    align-items: center;
-    max-width: 3000px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
     text-align: left;
 }
 
 /* Left Logo */
-.mealminer-logo {
-    width: 400px;
-    height: 400px;
-    margin-right: -1rem;
+.mealminer-logo-main {
+    width: 450px;
+    height: 450px;
+    margin-left: -5rem;
 }
 
 /* Text */
 .text-content {
-    max-width: 300px;
+    max-width: 650px;
 }
 
 /* Title and subtitle */
 .title-section h1 {
-    font-size: 100px;
+    font-size: 4.5rem;
     color: #1E1E1E;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .motto {
     font-family: 'Anonymous Pro';
-    font-size: 0.7rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    font-size: 2rem;
     color: #222;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Buttons */
 .button-container {
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -65,13 +119,19 @@ body {
 .nav-signup-button,
 .nav-login-button {
     background-color: #FEE59F;
-    border: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.75rem;
-    padding: 0.8rem 1.4rem;
+    font-family: 'Press Start 2P';
+    font-size: 1.2rem;
+    width: 312px;
+    height: 70px;
+    text-align: center;
+    padding: 1.5rem 1rem;
     cursor: pointer;
     transition: transform 0.15s ease-in-out;
-    border-radius: 8px;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-signup-button:hover,
@@ -82,7 +142,8 @@ body {
 .signup-text,
 .login-text {
     font-family: 'Anonymous Pro';
-    font-size: 0.55rem;
+    font-size: 1.5rem;
     margin-top: 0.4rem;
     color: #444;
 }
+

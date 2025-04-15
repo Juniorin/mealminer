@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
-    <header></header>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/index_images/logo.svg') }}" alt="MealMiner Logo" class="mealminer-logo-header">
+            <h1>mealminer</h1>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">FAQs</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="header-buttons">
+            <button class="header-btn">Make Chest</button>
+            <button class="header-btn">Open Chest</button>
+        </div>
+    </header>
     <div class="main-content">
         <div class="content-wrapper">
 
-            <img src="{{ url_for('static', filename='images/index_images/logo.png') }}" alt="MealMiner Logo" class="mealminer-logo">
+            <img src="{{ url_for('static', filename='images/index_images/logo.svg') }}" alt="MealMiner Logo" class="mealminer-logo-main">
             
             <div class="text-content">
                 <div class="title-section">
