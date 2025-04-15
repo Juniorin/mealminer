@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Rain</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fdf6e3;
+      overflow: hidden;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    #rain-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 999;
+    }
+
+    .rain-image {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      animation: fall linear;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center; padding-top: 100px;">Let it rain 🍕🍔</h1>
+  <div id="rain-container"></div>
+
+  <script>
+    const rainContainer = document.getElementById("rain-container");
+    const images = [
+      '🍕',
+      '🍔',
+      '🌮',
+    ];
+
+    function createRainImage() {
+      const isEmoji = images[Math.floor(Math.random() * images.length)];
+      
+      if (isEmoji.startsWith('http')) {
+        const imageEl = document.createElement('img');
+        imageEl.src = isEmoji;
+        imageEl.className = 'rain-image';
+        imageEl.style.left = `${Math.random() * 100}vw`;
+        imageEl.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        rainContainer.appendChild(imageEl);
+
+        setTimeout(() => imageEl.remove(), 6000);
+      } else {
+        const emojiEl = document.createElement('div');
+        emojiEl.className = 'rain-image';
+        emojiEl.textContent = isEmoji;
+        emojiEl.style.fontSize = '40px';
+        emojiEl.style.left = `${Math.random() * 100}vw`;
+        emojiEl.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        rainContainer.appendChild(emojiEl);
+
+        setTimeout(() => emojiEl.remove(), 6000);
+      }
+    }
+
+    setInterval(createRainImage, 200);
+  </script>
+
+</body>
+</html>
