@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Press+Start+2P&display=swap');
 
-body {
+* {
     font-family: 'Press Start 2P';
     background-color: #fff;
     margin: 0;
@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 .logo-container h1 {
@@ -40,16 +40,21 @@ body {
 
 .nav-links {
     display: flex;
-    align-items: center;
-    margin-left: auto;
+    list-style: none;
     gap: 2.5rem;
 }
 
-.nav-links a {
+.nav-container {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li a {
     text-decoration: none;
     font-family: 'Anonymous Pro';
     color: #1E1E1E;
     font-size: 2rem;
+    transition: all .3s ease 0s;
 }
 
 .header-buttons {
@@ -100,16 +105,13 @@ body {
 .title-section h1 {
     font-size: 4.5rem;
     font-weight: 400;
-    color: #1E1E1E;
-    margin: 0;
 }
 
 .motto {
     font-family: 'Anonymous Pro';
     font-size: 2rem;
     color: #222;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0rem;
 }
 
 /* Buttons */
