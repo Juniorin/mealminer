@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
     font-family: 'Press Start 2P';
     background-color: #fff;
     margin: 0;
     padding: 0;
-}
+} 
 
 /* Header */
 .site-header {
     position: fixed;
     top: 0;
     left: 0;
+    margin-top: 1.5rem;
     width: 100%;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .logo-container {
+.logo-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
+    margin-left: 2rem;
+}
+
+.logo-container h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
 
 .mealminer-logo-header {
     width: 3rem;
@@ -35,8 +41,9 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 2rem;
-  }
+    margin-left: auto;
+    gap: 2.5rem;
+}
 
 .nav-links a {
     text-decoration: none;
@@ -46,15 +53,17 @@ body {
 }
 
 .header-buttons {
-    flex: 0 0 auto;
     display: flex;
     gap: 0.5rem;
-  }
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
 
 .header-btn {
     font-family: 'Press Start 2P', cursive;
-    font-size: 0.65rem;
-    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.75rem 0.8rem;
     background-color: #FEE59F;
     border: none;
     border-radius: 6px;
@@ -90,6 +99,7 @@ body {
 /* Title and subtitle */
 .title-section h1 {
     font-size: 4.5rem;
+    font-weight: 400;
     color: #1E1E1E;
     margin: 0;
 }
@@ -105,16 +115,14 @@ body {
 /* Buttons */
 .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1.5rem;
-    justify-content: left;
 }
 
 .signup-container,
 .login-container {
     display: flex;
     flex-grow: 1;
-    align-items: left;
     flex-direction: column;
 }
 
