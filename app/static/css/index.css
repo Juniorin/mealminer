@@ -12,7 +12,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: 1.5rem;
+    padding: 1rem 1rem;
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -25,6 +25,7 @@
     align-items: center;
     gap: 0.5rem;
     margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .logo-container h1 {
@@ -67,6 +68,8 @@
 .header-btn {
     font-family: 'Press Start 2P', cursive;
     font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
     text-align: center;
     padding: 0.75rem 0.8rem;
     background-color: #FEE59F;
@@ -132,11 +135,12 @@
 .nav-login-button {
     background-color: #FEE59F;
     font-family: 'Press Start 2P';
+    text-decoration: none;
+    color: #000000;
     font-size: 1.2rem;
     width: 312px;
     height: 70px;
     text-align: center;
-    padding: 1.5rem 1rem;
     cursor: pointer;
     transition: transform 0.15s ease-in-out;
     border: none;

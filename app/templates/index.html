@@ -22,8 +22,8 @@
         </nav>
 
         <div class="header-buttons">
-            <button class="header-btn">Make Chest</button>
-            <button class="header-btn">Open Chest</button>
+            <a href="{{ url_for('auth.signup') }}" class="header-btn">Make Chest</a>
+            <a href="{{ url_for('auth.signup') }}" class="header-btn">Open Chest</a>
         </div>
     </header>
     <div class="main-content">
@@ -39,11 +39,11 @@
                 
                 <div class="button-container">
                     <div class="signup-container">
-                        <button type="button" class="nav-signup-button">Make Chest</button>
+                        <a href="{{ url_for('auth.signup') }}" class="nav-signup-button">Make Chest</a>
                         <p class="signup-text">Sign Up</p>
                     </div>
                     <div class="login-container">
-                        <button type="button" class="nav-login-button">Open Chest</button>
+                        <a href="{{ url_for('auth.signup') }}" class="nav-login-button">Open Chest</a>
                         <p class="login-text">Log In</p>
                     </div>
                 </div>
